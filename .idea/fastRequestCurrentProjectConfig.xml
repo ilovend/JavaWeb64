@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestCurrentProjectConfig">
+    <option name="dataList">
+      <list>
+        <NameGroup>
+          <option name="hostGroup">
+            <list>
+              <HostGroup>
+                <option name="env" value="local" />
+                <option name="url" value="http://localhost:8082/day02" />
+              </HostGroup>
+            </list>
+          </option>
+          <option name="name" value="JavaWeb64-day02" />
+        </NameGroup>
+      </list>
+    </option>
+    <option name="domain" value="http://localhost:8082/day02" />
+    <option name="enableEnv" value="local" />
+    <option name="enableProject" value="JavaWeb64-day02" />
+    <option name="envList">
+      <list>
+        <option value="local" />
+      </list>
+    </option>
+    <option name="projectList">
+      <list>
+        <option value="JavaWeb64-day02" />
+      </list>
+    </option>
+  </component>
+</project>
