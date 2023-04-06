@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db06?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher # 开启ant风格的路径匹配
+
+springfox:
+  documentation:
+    enabled: true # 开启swagger
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 开启驼峰命名

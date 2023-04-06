@@ -8,7 +8,7 @@
             <list>
               <HostGroup>
                 <option name="env" value="local" />
-                <option name="url" value="http://localhost:8082/day02" />
+                <option name="url" value="http://localhost:8082" />
               </HostGroup>
             </list>
           </option>
@@ -16,7 +16,7 @@
         </NameGroup>
       </list>
     </option>
-    <option name="domain" value="http://localhost:8082/day02" />
+    <option name="domain" value="http://localhost:8082" />
     <option name="enableEnv" value="local" />
     <option name="enableProject" value="JavaWeb64-day02" />
     <option name="envList">

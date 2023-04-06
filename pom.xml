@@ -7,6 +7,8 @@
     <modules>
         <module>JavaWeb64-day01</module>
         <module>JavaWeb64-day02</module>
+        <module>JavaWeb64-day03</module>
+        <module>JavaWeb64-day04</module>
     </modules>
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -56,6 +58,13 @@
             <artifactId>druid</artifactId>
             <version>1.2.15</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
