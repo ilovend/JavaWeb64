@@ -51,8 +51,6 @@
             </if>
         </where>
     </select>
-
-
     <select id="setPage" resultType="com.itheima.day04.pojo.Emp">
         <include refid="s1"></include>
         <where>
@@ -68,6 +66,12 @@
         </where>
         LIMIT #{index},#{pageSize}
     </select>
-
-
+    <select id="findById" resultType="com.itheima.day04.pojo.Emp">
+        <include refid="s1"></include>
+        <where>
+            <if test="id!=null">
+                AND id =#{id}
+            </if>
+        </where>
+    </select>
 </mapper>

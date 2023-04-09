@@ -20,4 +20,7 @@ public interface EmpService extends IService<Emp> {
     PageBean pageList(Integer page, Integer pageSize, String name, Short gender, LocalDate begin, LocalDate end);
 
     void deleteById(List<Integer> ids);
+
+    Emp findById(Integer id);
+
 }

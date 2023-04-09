@@ -22,4 +22,5 @@ public interface EmpMapper extends BaseMapper<Emp> {
 
     void deleteById(List<Integer> ids);
 
+    Emp findById(Integer id);
 }

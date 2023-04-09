@@ -39,4 +39,11 @@ public class EmpServiceImpl extends ServiceImpl<EmpMapper, Emp> implements EmpSe
     public void deleteById(List<Integer> ids) {
         empMapper.deleteById(ids);
     }
+
+    @Override
+    public Emp findById(Integer id) {
+        return empMapper.findById(id);
+    }
+
+
 }

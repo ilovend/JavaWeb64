@@ -16,4 +16,5 @@ public class TestDeptService {
         deptService.getBaseMapper().selectList(null).forEach(System.out::println);
     }
 
+
 }

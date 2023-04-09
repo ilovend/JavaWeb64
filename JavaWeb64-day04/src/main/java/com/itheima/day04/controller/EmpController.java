@@ -45,7 +45,7 @@ public class EmpController {
      * @return {@link Result}
      */
     @GetMapping
-    public Result pageList(Integer page, Integer pageSize, String name, Short gender, @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate begin, @DateTimeFormat(pattern = "yyyy-MM-dd")  LocalDate end) {
+    public Result pageList(Integer page, Integer pageSize, String name, Short gender, @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate begin, @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate end) {
         PageBean pageBean = null;
         try {
             pageBean = empService.pageList(page, pageSize, name, gender, begin, end);
@@ -63,6 +63,29 @@ public class EmpController {
         } catch (Exception e) {
             e.printStackTrace();
             return Result.error(MsgConstant.DELETE_ERROR);
+        }
+        return Result.success();
+    }
+
+    @GetMapping("/{id}")
+    public Result findById(@PathVariable Integer id) {
+        Emp emp = null;
+        try {
+            emp = empService.findById(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.error(MsgConstant.QUERY_ERROR);
+        }
+        return Result.success(emp);
+    }
+
+    @PutMapping
+    public Result update(@RequestBody Emp emp) {
+        try {
+            empService.updateById(emp);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.error(MsgConstant.UPDATE_ERROR);
         }
         return Result.success();
     }
