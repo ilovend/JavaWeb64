@@ -11,6 +11,11 @@
 
 
     <artifactId>JavaWeb64-day08</artifactId>
-
-
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>itheima-utils</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

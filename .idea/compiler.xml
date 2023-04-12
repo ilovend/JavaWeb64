@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="qiniu-oss-spring-boot-autoconfigure" />
         <module name="itheima-utils" />
         <module name="JavaWeb64-day05" />
         <module name="JavaWeb64-day06" />
@@ -15,6 +16,7 @@
         <module name="JavaWeb64-day01" />
         <module name="JavaWeb64-day02" />
         <module name="JavaWeb64-day03" />
+        <module name="qiniu-oss-spring-boot-starter" />
         <module name="JavaWeb64-day04" />
       </profile>
     </annotationProcessing>
@@ -33,6 +35,8 @@
       <module name="JavaWeb64-day07" options="-parameters" />
       <module name="JavaWeb64-day07-aopdemo" options="-parameters" />
       <module name="JavaWeb64-day08" options="-parameters" />
+      <module name="qiniu-oss-spring-boot-autoconfigure" options="-parameters" />
+      <module name="qiniu-oss-spring-boot-starter" options="-parameters" />
     </option>
   </component>
 </project>

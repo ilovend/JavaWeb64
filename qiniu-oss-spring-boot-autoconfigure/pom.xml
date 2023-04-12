@@ -9,13 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>JavaWeb64-day07</artifactId>
-<dependencies>
-    <dependency>
-        <groupId>io.springfox</groupId>
-        <artifactId>springfox-boot-starter</artifactId>
-        <version>3.0.0</version>
-    </dependency>
-</dependencies>
+    <groupId>com.qiniu.oss</groupId>
+    <artifactId>qiniu-oss-spring-boot-autoconfigure</artifactId>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 </project>

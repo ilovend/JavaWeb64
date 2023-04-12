@@ -14,6 +14,8 @@
         <module>JavaWeb64-day07</module>
         <module>JavaWeb64-day08</module>
         <module>itheima-utils</module>
+        <module>qiniu-oss-spring-boot-starter</module>
+        <module>qiniu-oss-spring-boot-autoconfigure</module>
 
     </modules>
     <parent>
@@ -70,11 +72,7 @@
             <version>1.2.16</version>
         </dependency>
 
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
-            <version>3.0.0</version>
-        </dependency>
+
 
         <dependency>
             <groupId>com.qiniu</groupId>
