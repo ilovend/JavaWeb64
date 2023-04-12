@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.day06.mapper.DeptMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.itheima.day06.pojo.Dept">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+    <sql id="s1">
+        select id, name, create_time, update_time
+        from dept
+    </sql>
+    <insert id="add" parameterType="com.itheima.day06.pojo.Dept">
+        insert into dept(name, create_time, update_time)
+        values (#{name}, #{createTime}, #{updateTime})
+    </insert>
+    <update id="update" parameterType="com.itheima.day06.pojo.Dept">
+        update dept
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="updateTime != null and updateTime !=null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+    <delete id="deleteById">
+        delete
+        from dept
+        where id = #{id}
+    </delete>
+    <select id="findAll" resultType="com.itheima.day06.pojo.Dept">
+        <include refid="s1"/>
+    </select>
+    <select id="findById" resultType="com.itheima.day06.pojo.Dept" parameterType="java.lang.Integer">
+        <include refid="s1"/>
+        where id = #{id}
+    </select>
+
+</mapper>

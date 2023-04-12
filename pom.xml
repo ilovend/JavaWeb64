@@ -10,6 +10,11 @@
         <module>JavaWeb64-day03</module>
         <module>JavaWeb64-day04</module>
         <module>JavaWeb64-day05</module>
+        <module>JavaWeb64-day06</module>
+        <module>JavaWeb64-day07</module>
+        <module>JavaWeb64-day08</module>
+        <module>itheima-utils</module>
+
     </modules>
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -33,11 +38,12 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
         <dependency>
@@ -61,7 +67,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-            <version>1.2.15</version>
+            <version>1.2.16</version>
         </dependency>
 
         <dependency>
@@ -75,6 +81,25 @@
             <artifactId>qiniu-java-sdk</artifactId>
             <version>[7.12.0, 7.12.99]</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>2.0.25</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -86,5 +111,5 @@
         </plugins>
     </build>
 
-    
+
 </project>

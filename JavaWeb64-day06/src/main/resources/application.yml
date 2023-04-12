@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/db07
+    username: root
+    password: 123456
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+# 七牛云配置
+qiniu:
+  accessKey: CazQQRyp5MiLDR_LiBruYeG7xyShydm_rLArdTJb
+  secretKey: oOlv82H51dZ-rb11H4VOBoQ4Vo9M7kgauE02WqfX
+  bucket: picgoimgs
+  domain: http://cdn.zyboy.site/
